@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matteo Maccari — One-to-one coaching with the GROW model</title>
+<meta name="description" content="Online one-to-one coaching for professionals and managers. GROW model, 60 or 80-minute sessions at €60, no packages or commitments.">
+<meta property="og:title" content="Matteo Maccari — One-to-one coaching">
+<meta property="og:description" content="Clear goals, conscious choices, concrete steps. Single sessions, no strings attached.">
+<meta property="og:image" content="./assets/hero.webp">
+<link rel="icon" href="./favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="alternate" hreflang="it" href="./index.html">
+<link rel="alternate" hreflang="en" href="./en.html">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="./assets/hero.webp">
+<style>
+:root{
+  --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);
+  --text-sm:clamp(.875rem,.8rem + .35vw,1rem);
+  --text-base:clamp(1rem,.95rem + .25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + .75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+  --text-3xl:clamp(2.5rem,1rem + 4vw,5rem);
+  --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;--space-32:8rem;
+  --bg:#f4f0e8;--surface:#faf7f1;--surface-2:#ebe5da;--line:#d9d1c3;
+  --ink:#1d262d;--muted:#5c646a;--faint:#8f9497;
+  --accent:#2c5464;--accent-hover:#1f3e4b;--accent-soft:#d7e0e1;
+  --sand:#b9875a;
+  --font-display:'Zodiak',Georgia,serif;
+  --font-body:'Switzer','Helvetica Neue',Arial,sans-serif;
+  --radius:.5rem;--max:72rem;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--text-base);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:500;line-height:1.12;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.wrap{width:min(100% - 2*var(--space-6),var(--max));margin-inline:auto}
+.section{padding-block:clamp(var(--space-16),9vw,var(--space-32))}
+.eyebrow{font-size:var(--text-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:var(--space-4)}
+h2{font-family:var(--font-display);font-size:var(--text-xl)}
+h3{font-family:var(--font-body);font-weight:600;font-size:var(--text-lg);line-height:1.3}
+.lead{color:var(--muted);max-width:60ch;margin-top:var(--space-4)}
+.btn{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-3) var(--space-6);border-radius:999px;font-size:var(--text-sm);font-weight:600;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-ghost{border:1px solid currentColor}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+
+/* Header */
+.top{position:absolute;inset:0 0 auto 0;z-index:5;padding-block:var(--space-6);color:#fff}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:var(--space-4)}
+.brand{font-family:var(--font-display);font-size:var(--text-lg);text-decoration:none;letter-spacing:.01em}
+.nav{display:flex;gap:var(--space-6);font-size:var(--text-sm)}
+.nav a{text-decoration:none;opacity:.9}
+.nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.top-right{display:flex;align-items:center;gap:var(--space-6)}
+.lang{display:inline-flex;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:2px;font-size:var(--text-xs);font-weight:600;letter-spacing:.06em}
+.lang a,.lang span{padding:.2rem .65rem;border-radius:999px;text-decoration:none;line-height:1.4}
+.lang [aria-current]{background:#fff;color:var(--ink)}
+.lang a:hover{background:rgba(255,255,255,.15)}
+
+/* Hero */
+.hero{position:relative;min-height:min(92vh,56rem);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#3c4c57}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,32,40,.78) 0%,rgba(20,32,40,.45) 45%,rgba(20,32,40,.05) 80%),linear-gradient(0deg,rgba(20,32,40,.55),transparent 45%)}
+.hero .wrap{position:relative;z-index:2;padding-block:var(--space-32) clamp(var(--space-12),8vw,var(--space-24))}
+.hero h1{font-family:var(--font-display);font-size:var(--text-3xl);font-weight:400;max-width:14ch;letter-spacing:-.01em}
+.hero p{max-width:46ch;margin-top:var(--space-6);font-size:var(--text-base);color:rgba(255,255,255,.88)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-8)}
+.hero .btn-primary{background:#fff;color:var(--ink)}
+.hero .btn-primary:hover{background:var(--accent-soft)}
+.facts{display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-6);margin-top:var(--space-10);font-size:var(--text-xs);color:rgba(255,255,255,.8);letter-spacing:.04em}
+.facts span::before{content:"";display:inline-block;width:.4rem;height:.4rem;border-radius:50%;background:var(--sand);margin-right:var(--space-2);vertical-align:middle}
+
+/* Per chi */
+.split{display:grid;grid-template-columns:1fr;gap:var(--space-12)}
+@media(min-width:900px){.split{grid-template-columns:5fr 7fr;gap:var(--space-20)}}
+.topics{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.topics li{display:grid;grid-template-columns:2.5rem 1fr;gap:var(--space-4);padding-block:var(--space-6);border-bottom:1px solid var(--line)}
+.topics .n{font-family:var(--font-display);color:var(--sand);font-size:var(--text-lg);line-height:1.3}
+.topics p{color:var(--muted);margin-top:var(--space-1)}
+
+/* GROW */
+.grow{background:var(--ink);color:#eef0ee}
+.grow .eyebrow{color:#c9a27c}
+.grow .lead{color:#b8bfc2}
+.steps{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(255,255,255,.12);margin-top:var(--space-12);border:1px solid rgba(255,255,255,.12)}
+@media(min-width:700px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1050px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--ink);padding:var(--space-8) var(--space-6)}
+.step .letter{font-family:var(--font-display);font-size:var(--text-2xl);color:#c9a27c;line-height:1}
+.step h3{margin-top:var(--space-4);color:#fff}
+.step p{margin-top:var(--space-2);color:#b8bfc2;font-size:var(--text-sm)}
+.step q{display:block;margin-top:var(--space-4);font-family:var(--font-display);font-style:italic;color:#e5e1d8;font-size:var(--text-sm)}
+.step q::before,.step q::after{content:none}
+.grow-note{margin-top:var(--space-8);color:#b8bfc2;font-size:var(--text-sm);max-width:70ch}
+
+/* Sessioni */
+.session-grid{display:grid;grid-template-columns:1fr;gap:var(--space-12);align-items:center}
+@media(min-width:900px){.session-grid{grid-template-columns:6fr 5fr;gap:var(--space-16)}}
+.session-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3}
+.session-img img{width:100%;height:100%;object-fit:cover}
+.price-card{margin-top:var(--space-8);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-8)}
+.price{display:flex;align-items:baseline;gap:var(--space-3)}
+.price strong{font-family:var(--font-display);font-size:var(--text-2xl);font-weight:500;line-height:1}
+.price span{color:var(--muted);font-size:var(--text-sm)}
+.durations{display:flex;gap:var(--space-2);margin-top:var(--space-5);flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:var(--space-1) var(--space-4);font-size:var(--text-sm)}
+.checks{list-style:none;padding:0;margin:var(--space-6) 0 0;display:grid;gap:var(--space-3)}
+.checks li{display:grid;grid-template-columns:1.25rem 1fr;gap:var(--space-3);font-size:var(--text-sm);color:var(--ink)}
+.checks svg{margin-top:.3em;color:var(--accent)}
+
+/* Chi sono */
+.about{background:var(--surface-2)}
+.about-grid{display:grid;grid-template-columns:1fr;gap:var(--space-12)}
+@media(min-width:900px){.about-grid{grid-template-columns:4fr 7fr;gap:var(--space-20);align-items:start}}
+.about-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;max-height:36rem}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-body p+p{margin-top:var(--space-4)}
+.about-body p{color:var(--muted);max-width:62ch}
+.about-body .intro{font-family:var(--font-display);font-size:var(--text-lg);color:var(--ink);line-height:1.45;margin-block:var(--space-6)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-10);padding-top:var(--space-8);border-top:1px solid var(--line)}
+.stats strong{display:block;font-family:var(--font-display);font-size:var(--text-xl);font-weight:500;line-height:1.1}
+.stats span{display:block;font-size:var(--text-xs);color:var(--muted);margin-top:var(--space-2)}
+
+/* Principi */
+.principles{display:grid;grid-template-columns:1fr;gap:var(--space-8);margin-top:var(--space-12)}
+@media(min-width:800px){.principles{grid-template-columns:repeat(3,1fr)}}
+.principle{border-top:2px solid var(--accent);padding-top:var(--space-6)}
+.principle p{margin-top:var(--space-2);color:var(--muted);font-size:var(--text-sm)}
+
+/* FAQ */
+.faq{max-width:48rem;margin-top:var(--space-10)}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding-block:var(--space-5);font-weight:600;display:flex;justify-content:space-between;gap:var(--space-4)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--font-display);font-size:var(--text-lg);line-height:1;color:var(--accent);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding-bottom:var(--space-6);color:var(--muted);max-width:65ch}
+
+
+/* Prenotazione */
+.booking{background:var(--surface);border-top:1px solid var(--line)}
+.booking-head{display:grid;grid-template-columns:1fr;gap:var(--space-4);align-items:end}
+@media(min-width:900px){.booking-head{grid-template-columns:6fr 5fr;gap:var(--space-16)}.booking-head .lead{margin-top:0}}
+.booking-frame{margin-top:var(--space-10);background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;min-height:44rem;position:relative}
+.booking-frame:not(.ready)::before{content:attr(data-loading);position:absolute;inset:0;display:grid;place-items:center;color:var(--faint);font-size:var(--text-sm)}
+#koalendar-inline,#koalendar-inline iframe{width:100%;min-height:44rem;border:0;display:block}
+.booking-alt{margin-top:var(--space-4);font-size:var(--text-xs);color:var(--muted)}
+.booking-alt a{color:var(--accent)}
+
+/* Contatti */
+.contact{background:var(--accent);color:#fff;text-align:left}
+.contact h2{font-size:var(--text-2xl);max-width:18ch}
+.contact .lead{color:rgba(255,255,255,.82)}
+.contact-row{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-10)}
+.contact .btn-primary{background:#fff;color:var(--accent-hover)}
+.contact .btn-primary:hover{background:var(--accent-soft)}
+.contact .btn-ghost{color:#fff}
+.contact .btn-ghost:hover{background:rgba(255,255,255,.1)}
+.contact small{display:block;margin-top:var(--space-8);font-size:var(--text-xs);color:rgba(255,255,255,.7);max-width:60ch}
+footer{padding-block:var(--space-8);font-size:var(--text-xs);color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4)}
+
+@media(max-width:700px){
+  .nav{display:none}
+  .stats{grid-template-columns:1fr;gap:var(--space-6)}
+  .hero{min-height:88vh}
+  .hero img{object-position:70% 50%}
+}
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#" class="brand">Matteo Maccari</a>
+    <div class="top-right">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#per-chi">Who it's for</a>
+      <a href="#metodo">Method</a>
+      <a href="#sessioni">Sessions</a>
+      <a href="#chi-sono">About</a>
+      <a href="#prenota">Book</a>
+      <a href="#contatti">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language"><a href="./index.html" hreflang="it" lang="it" title="Versione italiana">IT</a><span aria-current="true" lang="en">EN</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="./assets/hero.webp" alt="Tuscan coastline at dawn, calm sea and haze on the horizon" width="1800" height="1200">
+    <div class="wrap">
+      <h1>Find clarity. Choose your direction.</h1>
+      <p>One-to-one coaching for professionals and managers who want to understand what they really want, see their options and turn them into concrete steps.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#prenota">Book a session</a>
+        <a class="btn btn-ghost" href="#metodo">How I work</a>
+      </div>
+      <div class="facts">
+        <span>GROW model</span><span>Online</span><span>Single sessions, no packages</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="per-chi">
+    <div class="wrap split">
+      <div class="reveal">
+        <div class="eyebrow">Who it's for</div>
+        <h2>For those who feel it's time to take a step, but don't yet know which one.</h2>
+        <p class="lead">I work with people in demanding work environments: team leaders, middle managers and professionals going through a change or wanting to grow with greater self-awareness.</p>
+      </div>
+      <ol class="topics reveal">
+        <li><span class="n">01</span><div><h3>Role and professional identity</h3><p>When your role changes, or you no longer recognise yourself in what you do, and you want to reconnect with your strengths.</p></div></li>
+        <li><span class="n">02</span><div><h3>Important decisions</h3><p>A career crossroads, a choice you keep postponing, a goal you can't quite bring into focus.</p></div></li>
+        <li><span class="n">03</span><div><h3>Leadership and communication</h3><p>Delegating, giving feedback, handling difficult conversations, leading a team under pressure.</p></div></li>
+        <li><span class="n">04</span><div><h3>Personal growth</h3><p>Greater awareness of yourself, your strengths and what holds you back.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section grow" id="metodo">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">The method</div>
+        <h2>A structured conversation that starts with you.</h2>
+        <p class="lead">I use the GROW model: a simple, flexible framework that takes you from goal to action. I don't tell you what to do. With the right questions, I help you find your own answer.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step"><div class="letter">G</div><h3>Goal</h3><p>We clarify what you want to achieve, from the session and from the journey.</p><q>What would you like to be different?</q></div>
+        <div class="step"><div class="letter">R</div><h3>Reality</h3><p>We explore where things stand today: facts, resources, obstacles, what you've already tried.</p><q>What is happening right now?</q></div>
+        <div class="step"><div class="letter">O</div><h3>Options</h3><p>We bring the alternatives to the surface before choosing one.</p><q>What else could you do?</q></div>
+        <div class="step"><div class="letter">W</div><h3>Will</h3><p>You define the next step, with a concrete timeline and commitment.</p><q>What will you do, and when?</q></div>
+      </div>
+      <p class="grow-note reveal">The structure is a guide, not a questionnaire: if something new comes up during the session, we can step back and reframe the goal.</p>
+    </div>
+  </section>
+
+  <section class="section" id="sessioni">
+    <div class="wrap session-grid">
+      <div class="session-img reveal"><img src="./assets/session.webp" alt="Wooden table with two cups of coffee and an open notebook by a window" width="1800" height="1350" loading="lazy"></div>
+      <div class="reveal">
+        <div class="eyebrow">Sessions</div>
+        <h2>Simple and transparent.</h2>
+        <p class="lead">No packages to buy upfront. Each session stands on its own: you decide whether and when to continue.</p>
+        <div class="price-card">
+          <div class="price"><strong>€60</strong><span>per session</span></div>
+          <div class="durations" aria-label="Available durations"><span class="chip">60 minutes</span><span class="chip">80 minutes</span></div>
+          <ul class="checks">
+            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Same price for 60 or 80 minutes: choose the length that suits you</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Online, wherever you are</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>You can stop at any time</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Complete confidentiality on everything you share</li>
+          </ul>
+          <a class="btn btn-primary" style="margin-top:var(--space-6)" href="https://koalendar.com/u/matteo-maccari?lng=en" data-koalendar-widget>Choose a date and time</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="chi-sono">
+    <div class="wrap about-grid">
+      <div class="about-img reveal"><img src="./assets/path.webp" alt="Path through Mediterranean scrub leading down to the sea" width="1350" height="1800" loading="lazy"></div>
+      <div class="about-body reveal">
+        <div class="eyebrow">About me</div>
+        <h2>Matteo Maccari</h2>
+        <p class="intro">Over more than 15 years in high-performance retail environments worldwide, I discovered and practised coaching as a leadership style, leading customer service, technical support and B2B sales teams towards commercial and professional development goals. Along the way I realised that what I'm most passionate about is helping people grow and act effectively, giving shape to what they truly want.</p>
+        <p>Over the last three years, in my leadership roles, I have supported team members, peers and middle managers through structured coaching conversations: goals, development, accountability, change.</p>
+        <p>I trained in the GROW model through a programme based on ICF (International Coaching Federation) materials and I am working towards ICF accreditation. Today I work with private clients in confidential one-to-one coaching.</p>
+        <p>I bring to each session careful listening, precise questions and first-hand experience of what it means to work under pressure, with targets to hit and people to lead.</p>
+        <div class="stats">
+          <div><strong>15+ years</strong><span>of leadership in high-performance retail</span></div>
+          <div><strong>3 years</strong><span>of coaching in leadership roles</span></div>
+          <div><strong>30+ hours</strong><span>of one-to-one coaching with private clients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="principi">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">How I work</div>
+        <h2>Trust, freedom, responsibility.</h2>
+      </div>
+      <div class="principles reveal">
+        <div class="principle"><h3>Free choice</h3><p>Coaching only works if you choose it. That's why there are no packages or commitments: you stay as long as it helps you.</p></div>
+        <div class="principle"><h3>Confidentiality</h3><p>What comes up in a session stays between us. A safe space to think out loud, without judgement.</p></div>
+        <div class="principle"><h3>Autonomy</h3><p>The answers and decisions are yours. My role is to help you see them more clearly and turn them into action.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="eyebrow">Frequently asked questions</div>
+      <h2>Before you start</h2>
+      <div class="faq">
+        <details><summary>What is coaching, and what isn't it?</summary><p>Coaching is focused on the present and the future: it starts from a goal and helps you reach it using your own resources. It is neither therapy nor consulting: I don't diagnose and I don't tell you what to do. If needs of a different kind come up, I will tell you openly.</p></details>
+        <details><summary>What happens in the first session?</summary><p>We get to know each other, you clarify what brings you to coaching and we define the goal together. From the very first session you leave with a clearer picture and at least one concrete next step.</p></details>
+        <details><summary>60 or 80 minutes?</summary><p>The price is the same, so choose what works for you: 60 minutes for a focused session, 80 if you prefer more room to explore. You can change the length each time.</p></details>
+        <details><summary>How many sessions will I need?</summary><p>It depends on your goal. Some people find what they are looking for in a few sessions, others prefer a longer journey. There is no minimum: you decide after each meeting.</p></details>
+        <details><summary>How do I book and receive the session link?</summary><p>Pick a date and time from the calendar in the Book section. After booking you will receive a confirmation email with all the details, and you can add the appointment to your own calendar.</p></details>
+        <details><summary>Are sessions held online?</summary><p>Yes, sessions take place online by video call, so you can join from wherever suits you best.</p></details>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section booking" id="prenota">
+    <div class="wrap">
+      <div class="booking-head reveal">
+        <div>
+          <div class="eyebrow">Book</div>
+          <h2>Choose the day and time that suit you.</h2>
+        </div>
+        <p class="lead">Book a 30-minute introductory call, or go straight to a 1-hour or 1-hour-20 coaching session. You will receive an email confirmation right away with the details to join.</p>
+      </div>
+      <div class="booking-frame" data-loading="Loading the calendar…">
+        <div id="koalendar-inline" aria-label="Booking calendar"></div>
+        <noscript><iframe title="Matteo Maccari's booking calendar" src="https://koalendar.com/u/matteo-maccari?embed=true&lng=en" width="100%" height="800" style="border:0"></iframe></noscript>
+      </div>
+      <p class="booking-alt">Calendar not loading? <a href="https://koalendar.com/u/matteo-maccari?lng=en" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
+    </div>
+  </section>
+
+  <section class="section contact" id="contatti">
+    <div class="wrap">
+      <div class="eyebrow" style="color:#e2c4a4">Contact</div>
+      <h2>The first step is a conversation.</h2>
+      <p class="lead">Book directly from the calendar or, if you prefer, drop me a few lines about what you would like to work on before scheduling your first session.</p>
+      <div class="contact-row">
+        <a class="btn btn-primary" href="https://koalendar.com/u/matteo-maccari?lng=en" data-koalendar-widget>Book a session</a>
+        <a class="btn btn-ghost" href="mailto:info.cliffordcoaching@gmail.com?subject=Coaching%20enquiry">Send me an email</a>
+      </div>
+      <small>info.cliffordcoaching@gmail.com — Sessions in Italian or English.</small>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Matteo Maccari — One-to-one coaching</span>
+    <span>GROW model · Online sessions</span>
+  </div>
+</footer>
+
+<script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
+<script async src="https://koalendar.com/assets/widget.js"></script>
+<script>
+Koalendar('init');
+Koalendar('inline',{url:'https://koalendar.com/u/matteo-maccari?lng=en',selector:'#koalendar-inline'});
+(function(){const f=document.querySelector('.booking-frame');const t=setInterval(()=>{if(f.querySelector('iframe')){f.classList.add('ready');clearInterval(t)}},300);setTimeout(()=>clearInterval(t),20000)})();
+</script>
+<script>
+(function(){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));})();
+</script>
+</body>
+</html>
