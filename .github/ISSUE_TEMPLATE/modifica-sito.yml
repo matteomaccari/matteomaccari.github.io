@@ -1,0 +1,48 @@
+name: Modifica al sito
+description: Chiedi una modifica al sito (basta scriverla in italiano)
+title: "[modifica] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Compila i campi qui sotto e invia. Poi assegna la richiesta a **Copilot**
+        dal menu *Assignees* a destra: preparerà le modifiche e ti chiederà di
+        approvarle. Niente va online finché non fai il merge.
+
+  - type: textarea
+    id: cosa
+    attributes:
+      label: Cosa vuoi cambiare?
+      description: Scrivi in modo semplice, come lo spiegheresti a voce.
+      placeholder: "Nella home, il titolo dice '...' ma vorrei dicesse '...'. Inoltre vorrei aggiungere una riga con il mio indirizzo email in fondo."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pagina
+    attributes:
+      label: Su quale pagina?
+      options:
+        - Entrambe le pagine (italiano e inglese)
+        - Solo la home italiana (index.html)
+        - Solo la home inglese (en.html)
+        - Non lo so, decidi tu
+    validations:
+      required: true
+
+  - type: textarea
+    id: come
+    attributes:
+      label: Come deve apparire? (facoltativo)
+      description: Se hai un esempio, un link, o una foto, incollalo qui.
+    validations:
+      required: false
+
+  - type: textarea
+    id: non-toccare
+    attributes:
+      label: Cosa NON deve cambiare (facoltativo)
+      description: Parti che ti piacciono così come sono.
+      placeholder: "Non cambiare i colori né le foto."
+    validations:
+      required: false

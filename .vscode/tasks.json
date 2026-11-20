@@ -1,0 +1,48 @@
+{
+  // Comandi a portata di clic. Si aprono con: Ctrl+Shift+P -> "Run Task"
+  // (oppure menu Terminal -> Run Task...).
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "messaggio",
+      "type": "promptString",
+      "description": "Cosa hai cambiato? (una frase breve; puoi lasciare vuoto)",
+      "default": ""
+    }
+  ],
+  "tasks": [
+    {
+      "label": "try",
+      "detail": "Anteprima del sito sul tuo computer. Non pubblica niente.",
+      "type": "shell",
+      "command": "bash",
+      "args": ["scripts/try.sh"],
+      // Ctrl+Shift+B esegue direttamente questo
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "name": "anteprima"
+      },
+      "icon": { "id": "eye", "color": "terminal.ansiBlue" },
+      "problemMatcher": []
+    },
+    {
+      "label": "publish",
+      "detail": "Salva le modifiche e aggiorna il sito online. Ti chiede una descrizione.",
+      "type": "shell",
+      "command": "bash",
+      "args": ["scripts/publish.sh", "${input:messaggio}"],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "name": "pubblica"
+      },
+      "icon": { "id": "cloud-upload", "color": "terminal.ansiGreen" },
+      "problemMatcher": []
+    }
+  ]
+}
